@@ -23,7 +23,7 @@ We've basically let the user decide if they want to use the theme, the taskbar, 
 \
 You may ask yourself why the overhead is so big and significant, well...
 * the Theme API will spawn two *Command Prompt* processes to retrieve registry values by executing the `reg query` command.
-* the Taskbar API, on the other hand, will request the JVM to load a dynamic link library (DLL) while the `SwingBoost.initialize()` method initializes the Windows COM-Library to use the native ITaskbarList3 interface.
+* the Taskbar API, on the other hand, will request the JVM to load a dynamic link library (DLL) while the `SwingBoost.initialize()` method [initializes the Windows COM-Library](https://learn.microsoft.com/en-us/windows/win32/api/objbase/nf-objbase-coinitialize) to use the native [ITaskbarList3](https://learn.microsoft.com/en-us/windows/win32/api/shobjidl_core/nn-shobjidl_core-itaskbarlist3) interface.
 Don't forget to call `SwingBoost.uninitialize()` when you're done using the Taskbar API.
 \
 And finally, you can now go further and experiment with the library by yourself... Maybe after looking at our examples: [Theme-API](#examples-theme), [Taskbar-API](#examples-taskbar).

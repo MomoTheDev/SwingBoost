@@ -26,7 +26,7 @@ You may ask yourself why the overhead is so big and significant, well...
 * the Taskbar API, on the other hand, will request the JVM to load a dynamic link library (DLL) while the `SwingBoost.initialize()` method initializes the Windows COM-Library to use the native ITaskbarList3 interface.
 Don't forget to call `SwingBoost.uninitialize()` when you're done using the Taskbar API.
 \
-And finally, you can now go further and experiment with the library by yourself... Maybe after looking at our [examples](#Examples).
+And finally, you can now go further and experiment with the library by yourself... Maybe after looking at our examples: [Theme-API](#examples-theme), [Taskbar-API](#examples-taskbar).
 
 Examples (Theme)
 ---

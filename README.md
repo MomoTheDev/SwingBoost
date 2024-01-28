@@ -1,4 +1,4 @@
-SwingBoost
+_SwingBoost ([Deprecated](#Deprecated))_
 ---
 SwingBoost is a Java library that's intended to be used on Windows 7, 8, 8.1, 10, and 11. 
 It's a library that can be used either with AWT, and/or Swing (and/or as a Standalone to access the Theme-API) to modify the behavior of the taskbar progress state/value (Taskbar-API) and to retrieve some personalization details of the current user (Theme-API).
@@ -20,3 +20,7 @@ A guide on how you can build the library by yourself can be found [here](https:/
 License
 ---
 This library is currently licenses under the [MIT License](https://github.com/MomoTheDev/SwingBoost/blob/master/LICENSE)
+
+Deprecated
+---
+You should use the [Taskbar API](https://docs.oracle.com/javase/9/docs/api/java/awt/Taskbar.html) provided by AWT (Java 9+) which is more feature filled and stable. It integrates very well with both AWT & Swing.
